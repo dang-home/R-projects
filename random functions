@@ -1,0 +1,13 @@
+# extract a number from a group
+x<-1:100
+sample(x,1)
+#random permutation.The sample was not put back to x after selcetion.No repeats occur in results of sample function.
+sample(x)
+#bootstrap resampling -- only if length(x) > 1.The sample was put back to x after selcetion. Repeats occur in results of sample function.
+sample(x,replace=T)
+#get i (for example 20) random number between 10(a) 20(b)
+a<-10
+b<-20
+i<-20
+runif(i,a,b)
+
