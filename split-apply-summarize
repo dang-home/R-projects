@@ -7,3 +7,4 @@ by(db$age,db$sex,mean)
 #ddply
 library("plyr")
 ddply(db,~sex,summarize,age=mean(age),height=mean(height))
+aggregate(db[,2:3],by=list(db$sex),mean)
