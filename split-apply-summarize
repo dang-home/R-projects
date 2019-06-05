@@ -1,0 +1,9 @@
+#by (data, INDICES, FUN, ..., simplify = TRUE)
+sex<-rep(c("M","F"),each=3,4)
+age<-runif(12,25,45)
+height<-runif(24,30,45)
+db<-data.frame(sex,age,height)
+by(db$age,db$sex,mean)
+#ddply
+library("plyr")
+ddply(db,~sex,summarize,age=mean(age),height=mean(height))
