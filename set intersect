@@ -1,0 +1,4 @@
+# %in% members of a set belongs to another set ,return T or F
+letters[1:2] %in% letters[2:10]
+# match members of a first set belongs to a second set, return position in second set
+match(letters[1:2],letters[2:10])
